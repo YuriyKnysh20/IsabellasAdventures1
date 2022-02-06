@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Platform
+  - Potion
+  - Tablet
+  - Coin
+  - CharacterSpawnPoint
+  - Background
   layers:
   - Default
   - TransparentFX
