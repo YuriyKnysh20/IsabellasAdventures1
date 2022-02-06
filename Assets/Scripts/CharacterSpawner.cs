@@ -21,7 +21,7 @@ public class CharacterSpawner : MonoBehaviour
 
     private GameObject _selectedCharacter;
 
-    private int startLevel = 3;
+    private int startLevel = 1;
     
 
     private void Start()
