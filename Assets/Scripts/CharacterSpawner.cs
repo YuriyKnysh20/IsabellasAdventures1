@@ -11,7 +11,6 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] private GameObject _warrior;
     [SerializeField] private GameObject _womanWarrior;
     [SerializeField] private GameObject _wizard;
-    [SerializeField] private GameObject _archery;
 
     [SerializeField] private Sprite _background1;
     [SerializeField] private Sprite _background2;
@@ -98,12 +97,6 @@ public class CharacterSpawner : MonoBehaviour
     public void SetCharacterWizard()
     {
         _selectedCharacter = _wizard;
-        _menu.LoadTo(startLevel);
-    }
-
-    public void SetCharacterArchery()
-    {
-        _selectedCharacter = _archery;
         _menu.LoadTo(startLevel);
     }
 }

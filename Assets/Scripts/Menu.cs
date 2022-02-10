@@ -5,15 +5,28 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     [SerializeField] private InputField nameField;
+    [SerializeField] private GameObject characterScreen;
 	public Button back;
 	private void Start()
-	{		
-		if(PlayerPrefs.HasKey("Player_Name"))
+	{
+        characterScreen.SetActive(false);
+
+        if (PlayerPrefs.HasKey("Player_Name"))
 		nameField.text=PlayerPrefs.GetString("Player_Name");
 	}
 	public void  OnEndEditName()
 	{
 		PlayerPrefs.SetString("Player_Name",nameField.text);
+    }
+
+	public void LoadCharacterChoiceScreen()
+    {
+        characterScreen.SetActive(true);
+    }
+
+	public void LoadCharacterScreen()
+    {
+
     }
 
     public void LoadTo(int level)
@@ -26,7 +39,7 @@ public class Menu : MonoBehaviour
     }
  public void OnClickPlay()
  {
- SceneManager.LoadScene(3);
+ SceneManager.LoadScene(1);
  }
  public void OnClickExit()
  {

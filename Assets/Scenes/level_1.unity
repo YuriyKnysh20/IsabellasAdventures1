@@ -377,6 +377,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -427,6 +428,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.1800003, y: 5, z: 0}
   m_LocalScale: {x: 0.8775627, y: 0.66127014, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1807117120}
   m_RootOrder: 0
@@ -1196,6 +1198,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 53.94996, y: -9.875944, z: -1.2205343}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1840627988}
   - {fileID: 1981225000}
@@ -1388,6 +1391,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 74.49907, y: -11.291504, z: -9.031363}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 858730203}
   - {fileID: 667621629}
@@ -1822,7 +1826,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
-  serializedVersion: 3
+  serializedVersion: 4
   m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 0
   m_EnableRealtimeLightmaps: 0
@@ -1835,7 +1839,7 @@ LightingSettings:
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
   m_Padding: 2
-  m_TextureCompression: 1
+  m_LightmapCompression: 2
   m_AO: 0
   m_AOMaxDistance: 1
   m_CompAOExponent: 1
@@ -1876,6 +1880,7 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+  m_PVRTiledBaking: 0
 --- !u!1001 &1096609464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2457,6 +2462,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.153804, y: -7.364753, z: -39.568012}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
@@ -2472,6 +2478,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895270607672529745, guid: a888c32409badbd4784ea601a87c6d05,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5895270607672529758, guid: a888c32409badbd4784ea601a87c6d05,
         type: 3}
@@ -2662,6 +2673,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -23.579514, y: -7.242618, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1905101374}
   - {fileID: 1004822616}
@@ -2713,6 +2725,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -30, y: -8, z: -2.68}
   m_LocalScale: {x: 1.0781078, y: 1.0781076, z: 1.0781076}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1865626241}
   - {fileID: 181579728}
@@ -2862,6 +2875,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1552404131}
   m_RootOrder: 0
@@ -2942,6 +2956,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1547575136}
   m_Father: {fileID: 1899152463}
@@ -3167,6 +3182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheNarrator
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991478729542240389, guid: 9f8886267b4a2f34fb85aa796aadd9ea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f8886267b4a2f34fb85aa796aadd9ea, type: 3}
@@ -3408,6 +3428,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -23.579514, y: -7.242618, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 606137688}
   - {fileID: 1804140133}
@@ -4120,6 +4141,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.372494, y: -1.7228147, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 173858800}
   - {fileID: 2011017803}
@@ -4218,6 +4240,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StartDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537312846408140464, guid: 4bb37fd60054a834eb3b8e04e2db03be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1537312846408140465, guid: 4bb37fd60054a834eb3b8e04e2db03be,
         type: 3}

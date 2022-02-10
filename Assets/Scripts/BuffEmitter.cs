@@ -15,7 +15,7 @@ public class BuffEmitter : MonoBehaviour
 		}
 	}
 
-
+	
 private void OnTriggerExit2D(Collider2D col) 
 	{
 		if (GameManager.Instance.buffRecieverContainer.ContainsKey(col.gameObject))
@@ -25,7 +25,7 @@ private void OnTriggerExit2D(Collider2D col)
 		}
 	}
 	
-
+	
 }
  [System.Serializable]
 public class Buff
