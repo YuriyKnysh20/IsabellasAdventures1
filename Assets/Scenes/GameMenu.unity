@@ -339,9 +339,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 797167935}
-        m_TargetAssemblyTypeName: CharacterSpawner, Assembly-CSharp
-        m_MethodName: SetCharacterWarrior
+      - m_Target: {fileID: 1964068532}
+        m_TargetAssemblyTypeName: PlayerSelect, Assembly-CSharp
+        m_MethodName: KnightMale
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -466,7 +466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216845070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.820814, y: 4.3323784, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1129,9 +1129,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 797167935}
-        m_TargetAssemblyTypeName: CharacterSpawner, Assembly-CSharp
-        m_MethodName: SetCharacterWitch
+      - m_Target: {fileID: 1964068532}
+        m_TargetAssemblyTypeName: PlayerSelect, Assembly-CSharp
+        m_MethodName: Witch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1967,6 +1967,7 @@ MonoBehaviour:
   _background4: {fileID: 21300000, guid: e2163149fa6a2e34c8271a971f9083e3, type: 3}
   _background5: {fileID: 21300000, guid: 5a03b52e9a602fa478aac193334e212f, type: 3}
   _background6: {fileID: 21300000, guid: 6e8a11f1c4a38c241949d061185dc105, type: 3}
+  _selectedCharacter: {fileID: 0}
 --- !u!4 &797167936
 Transform:
   m_ObjectHideFlags: 0
@@ -2196,9 +2197,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 797167935}
-        m_TargetAssemblyTypeName: CharacterSpawner, Assembly-CSharp
-        m_MethodName: SetCharacterWomanWarrior
+      - m_Target: {fileID: 1964068532}
+        m_TargetAssemblyTypeName: PlayerSelect, Assembly-CSharp
+        m_MethodName: KnightFemale
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2716,9 +2717,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 797167935}
-        m_TargetAssemblyTypeName: CharacterSpawner, Assembly-CSharp
-        m_MethodName: SetCharacterAssasin
+      - m_Target: {fileID: 1964068532}
+        m_TargetAssemblyTypeName: PlayerSelect, Assembly-CSharp
+        m_MethodName: Assasin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3200,9 +3201,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 797167935}
-        m_TargetAssemblyTypeName: CharacterSpawner, Assembly-CSharp
-        m_MethodName: SetCharacterWizard
+      - m_Target: {fileID: 1964068532}
+        m_TargetAssemblyTypeName: PlayerSelect, Assembly-CSharp
+        m_MethodName: Wizard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3907,6 +3908,7 @@ GameObject:
   - component: {fileID: 1964068527}
   - component: {fileID: 1964068526}
   - component: {fileID: 1964068531}
+  - component: {fileID: 1964068532}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4036,6 +4038,25 @@ MonoBehaviour:
   level4: {fileID: 1758414343}
   level5: {fileID: 85105038}
   level6: {fileID: 801803144}
+--- !u!114 &1964068532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964068525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58fa90ca7d7b37041bd0e452fba0fede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charSpawn: {fileID: 797167935}
+  characterSprites:
+  - {fileID: 21300000, guid: ffd50d68b9f6d674fba79ba8cf385e4f, type: 3}
+  - {fileID: 21300000, guid: 06bd7b2befeeca04ca84e2279f425a54, type: 3}
+  - {fileID: 21300000, guid: 7fb225aa3d8a3da4fbf2c3737d1d5e25, type: 3}
+  - {fileID: 21300000, guid: 0677d4b968dee764790f0b2cf02add09, type: 3}
+  - {fileID: 21300000, guid: 2a12a8f7afd9ebf4c9a720a711e4d7d7, type: 3}
 --- !u!1 &1968610004
 GameObject:
   m_ObjectHideFlags: 0

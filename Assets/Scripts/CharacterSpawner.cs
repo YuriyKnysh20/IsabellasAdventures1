@@ -19,7 +19,7 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] private Sprite _background5;
     [SerializeField] private Sprite _background6;
 
-    private GameObject _selectedCharacter;
+    public GameObject _selectedCharacter;
 
     private int startLevel = 1;
     
@@ -41,7 +41,7 @@ public class CharacterSpawner : MonoBehaviour
             var character = Instantiate(_selectedCharacter);
             character.transform.position = GameObject.FindWithTag("CharacterSpawnPoint").transform.position;
 
-            switch (level)
+            /*switch (level)
             {
                 case 1:
                     GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite = _background1;
@@ -61,7 +61,7 @@ public class CharacterSpawner : MonoBehaviour
                 case 6:
                     GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite = _background6;
                     break;
-            }
+            }*/
             
         }
         else
